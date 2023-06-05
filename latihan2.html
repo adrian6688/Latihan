@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pendaftaran CPNS</h1>
+      <p>Please fill out this form with the required information</p>
+    </header>
+    <form action="https://lynk.id/melvinger" method="post">
+      <fieldset class="border-1">
+        <label for="first-name"
+          >First Name:
+          <input type="text" id="first-name" name="first-name" required
+        /></label>
+        <label for="last-name"
+          >Last Name: <input type="text" id="last-name" required
+        /></label>
+        <label for="email"
+          >Email: <input type="email" id="email" required
+        /></label>
+        <label for="password"
+          >Password:
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="6"
+            maxlength="12"
+            required
+          />
+        </label>
+        <label for="confirm-password"
+          >confirm Password:
+          <input
+            type="confirm-password"
+            name="confirm-password"
+            id="confirm-password"
+            minlength="6"
+            maxlength="12"
+            required
+        /></label>
+      </fieldset>
+
+      <!--CEKLIS PERSONAL AKUN-->
+      <fieldset>
+        <label for="personal-akun"
+          ><input
+            type="radio"
+            id="personal-akun"
+            name="personal-bisnis"
+            class="inline"
+          />
+          Personal akun</label
+        >
+        <label for="bisnis-akun"
+          ><input
+            type="radio"
+            id="bisnis-akun"
+            name="personal-bisnis"
+            class="inline"
+          />
+          bisnis akun</label
+        >
+        <label for="terms-condition"
+          ><input
+            type="checkbox"
+            id="terms-condition"
+            class="inline"
+            required
+          />
+          I accept <a href="#"> terms and condition</a></label
+        >
+      </fieldset>
+
+      <!--fOTO PROFIL -->
+
+      <fieldset>
+        <label for="foto-profil"
+          >Upload Foto profilmu
+          <input type="file" name="foto-profil" id="foto-profil"
+        /></label>
+        <label for="umur"
+          >Umur <input type="number" name="age" id="age" min="18" max="21"
+        /></label>
+        <label for="referrer"
+          >How did you hear about us?
+          <select name="referrer" id="referrer">
+            <option value="">(Pilih salah satu)</option>
+            <option value="1">Tiktok</option>
+            <option value="2">Instagram</option>
+            <option value="3">Orang Tua</option>
+            <option value="4">Orang Dalam</option>
+          </select>
+        </label>
+        <label for="bio"
+          >Tulis tentang dirimu
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="3"
+            placeholder="Aku suka main free fire...:v"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
