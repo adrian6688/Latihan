@@ -1,0 +1,2 @@
+# Latihan
+hasil latihan ku
